@@ -29,7 +29,10 @@ namespace Universite_Arsiv_Uygulamasi
             dataGridView1.DataSource = table;
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+
+       
+
+        private void button1_Click(object sender, EventArgs e)
         {
             string searchValue = textBox1.Text;
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
@@ -62,7 +65,7 @@ namespace Universite_Arsiv_Uygulamasi
             }
         }
 
-        private void button2_Click_1(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             //validation
             if (DateTime.Compare(dateTimePicker1.Value.Date, dateTimePicker2.Value.Date) > 0)

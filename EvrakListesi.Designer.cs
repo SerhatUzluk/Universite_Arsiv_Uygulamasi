@@ -49,9 +49,9 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(446, 70);
+            this.label1.Location = new System.Drawing.Point(510, 93);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 25);
+            this.label1.Size = new System.Drawing.Size(153, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Evrak Listesi";
             // 
@@ -66,100 +66,120 @@
             this.creationTime,
             this.depoId,
             this.location});
-            this.dataGridView1.Location = new System.Drawing.Point(170, 129);
+            this.dataGridView1.Location = new System.Drawing.Point(194, 172);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(656, 294);
+            this.dataGridView1.Size = new System.Drawing.Size(750, 392);
             this.dataGridView1.TabIndex = 1;
             // 
             // evrakId
             // 
             this.evrakId.DataPropertyName = "evrakId";
             this.evrakId.HeaderText = "Evrak ID";
+            this.evrakId.MinimumWidth = 6;
             this.evrakId.Name = "evrakId";
+            this.evrakId.Width = 125;
             // 
             // documentType
             // 
             this.documentType.DataPropertyName = "documentType";
             this.documentType.HeaderText = "Evrak Türü";
+            this.documentType.MinimumWidth = 6;
             this.documentType.Name = "documentType";
+            this.documentType.Width = 125;
             // 
             // documentDescription
             // 
             this.documentDescription.DataPropertyName = "documentDescription";
             this.documentDescription.HeaderText = "Evrak Açıklaması";
+            this.documentDescription.MinimumWidth = 6;
             this.documentDescription.Name = "documentDescription";
+            this.documentDescription.Width = 125;
             // 
             // creationTime
             // 
             this.creationTime.DataPropertyName = "creationTime";
             this.creationTime.HeaderText = "Oluşturulma Tarihi";
+            this.creationTime.MinimumWidth = 6;
             this.creationTime.Name = "creationTime";
+            this.creationTime.Width = 125;
             // 
             // depoId
             // 
             this.depoId.DataPropertyName = "depoId";
             this.depoId.HeaderText = "Depo ID";
+            this.depoId.MinimumWidth = 6;
             this.depoId.Name = "depoId";
+            this.depoId.Width = 125;
             // 
             // location
             // 
             this.location.DataPropertyName = "location";
             this.location.HeaderText = "Arşiv Konum";
+            this.location.MinimumWidth = 6;
             this.location.Name = "location";
+            this.location.Width = 125;
             // 
             // textBox1
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Location = new System.Drawing.Point(402, 429);
+            this.textBox1.Location = new System.Drawing.Point(459, 572);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(143, 23);
+            this.textBox1.Size = new System.Drawing.Size(163, 27);
             this.textBox1.TabIndex = 2;
             // 
             // button1
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.Location = new System.Drawing.Point(551, 429);
+            this.button1.Location = new System.Drawing.Point(630, 572);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 23);
+            this.button1.Size = new System.Drawing.Size(115, 31);
             this.button1.TabIndex = 3;
             this.button1.Text = "Ara";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker1.Location = new System.Drawing.Point(269, 487);
+            this.dateTimePicker1.Location = new System.Drawing.Point(307, 649);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 23);
+            this.dateTimePicker1.Size = new System.Drawing.Size(228, 27);
             this.dateTimePicker1.TabIndex = 4;
             // 
             // dateTimePicker2
             // 
             this.dateTimePicker2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker2.Location = new System.Drawing.Point(503, 487);
+            this.dateTimePicker2.Location = new System.Drawing.Point(575, 649);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 23);
+            this.dateTimePicker2.Size = new System.Drawing.Size(228, 27);
             this.dateTimePicker2.TabIndex = 5;
             // 
             // button2
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button2.Location = new System.Drawing.Point(727, 487);
+            this.button2.Location = new System.Drawing.Point(831, 649);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(86, 23);
+            this.button2.Size = new System.Drawing.Size(98, 31);
             this.button2.TabIndex = 6;
             this.button2.Text = "Filtrele";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // EvrakListesi
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(997, 598);
+            this.ClientSize = new System.Drawing.Size(1139, 797);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.dateTimePicker1);
@@ -167,6 +187,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "EvrakListesi";
             this.Text = "Evrak Listesi";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

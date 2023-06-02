@@ -62,11 +62,12 @@
             this.emanetAlanName,
             this.emanetAlanSurname,
             this.contactNumber});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 68);
+            this.dataGridView1.Location = new System.Drawing.Point(14, 91);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(1053, 294);
+            this.dataGridView1.Size = new System.Drawing.Size(1203, 392);
             this.dataGridView1.TabIndex = 0;
             // 
             // userId
@@ -146,9 +147,9 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(462, 9);
+            this.label1.Location = new System.Drawing.Point(528, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(222, 25);
+            this.label1.Size = new System.Drawing.Size(284, 32);
             this.label1.TabIndex = 1;
             this.label1.Text = "Emanet Verilen Evraklar";
             // 
@@ -156,64 +157,73 @@
             // 
             this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.Location = new System.Drawing.Point(529, 393);
+            this.button1.Location = new System.Drawing.Point(605, 524);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 23);
+            this.button1.Size = new System.Drawing.Size(120, 31);
             this.button1.TabIndex = 2;
             this.button1.Text = "Ara";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Location = new System.Drawing.Point(301, 394);
+            this.textBox1.Location = new System.Drawing.Point(344, 525);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(207, 23);
+            this.textBox1.Size = new System.Drawing.Size(236, 27);
             this.textBox1.TabIndex = 3;
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker1.Location = new System.Drawing.Point(301, 442);
+            this.dateTimePicker1.Location = new System.Drawing.Point(344, 589);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 23);
+            this.dateTimePicker1.Size = new System.Drawing.Size(228, 27);
             this.dateTimePicker1.TabIndex = 4;
             // 
             // dateTimePicker2
             // 
             this.dateTimePicker2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker2.Location = new System.Drawing.Point(529, 442);
+            this.dateTimePicker2.Location = new System.Drawing.Point(605, 589);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 23);
+            this.dateTimePicker2.Size = new System.Drawing.Size(228, 27);
             this.dateTimePicker2.TabIndex = 5;
             // 
             // button2
             // 
             this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button2.Location = new System.Drawing.Point(757, 442);
+            this.button2.Location = new System.Drawing.Point(865, 589);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(97, 23);
+            this.button2.Size = new System.Drawing.Size(111, 31);
             this.button2.TabIndex = 6;
             this.button2.Text = "Filtrele";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // emanetGuncelle
             // 
             this.emanetGuncelle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.emanetGuncelle.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.emanetGuncelle.Location = new System.Drawing.Point(935, 384);
+            this.emanetGuncelle.Location = new System.Drawing.Point(1069, 512);
+            this.emanetGuncelle.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.emanetGuncelle.Name = "emanetGuncelle";
-            this.emanetGuncelle.Size = new System.Drawing.Size(130, 23);
+            this.emanetGuncelle.Size = new System.Drawing.Size(149, 31);
             this.emanetGuncelle.TabIndex = 7;
             this.emanetGuncelle.Text = "Emanetleri Güncelle";
             this.emanetGuncelle.UseVisualStyleBackColor = false;
+            this.emanetGuncelle.Click += new System.EventHandler(this.emanetGuncelle_Click_1);
             // 
             // EmanetListesi
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1077, 611);
+            this.ClientSize = new System.Drawing.Size(1231, 815);
             this.Controls.Add(this.emanetGuncelle);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dateTimePicker2);
@@ -222,6 +232,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "EmanetListesi";
             this.Text = "Emanet Listesi";
             this.Load += new System.EventHandler(this.EmanetListesi_Load_1);

@@ -21,7 +21,9 @@ namespace Universite_Arsiv_Uygulamasi
             Icon = Icon.ExtractAssociatedIcon(System.Reflection.Assembly.GetExecutingAssembly().Location);
         }
 
-        private void evrakKayitButon_Click_1(object sender, EventArgs e)
+        
+
+        private void evrakKayitButon_Click(object sender, EventArgs e)
         {
             if (evrakTanim.Text != "" && evrakTuru.Text != "" && depoIdText.Text != "" && arsivKonumText.Text != "")
             {
@@ -39,4 +41,5 @@ namespace Universite_Arsiv_Uygulamasi
             }
         }
     }
-}
+    }
+

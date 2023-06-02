@@ -23,7 +23,29 @@ namespace Universite_Arsiv_Uygulamasi
             Icon = Icon.ExtractAssociatedIcon(System.Reflection.Assembly.GetExecutingAssembly().Location);
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+       
+
+        
+
+        private void emanetleriAl()
+        {
+            DataTable table = new DataTable();
+            MySqlDataReader reader = new EmanetDAO().getReaderEmanet();
+            table.Load(reader);
+            dataGridView1.DataSource = table;
+        }
+
+        private void EmanetListesi_Load(object sender, EventArgs e) {
+            dataGridView1.Columns[9].HeaderText = "Emanet Teslim Durumu";
+        }
+       
+
+        private void EmanetListesi_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
             string searchValue = textBox1.Text;
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
@@ -56,34 +78,7 @@ namespace Universite_Arsiv_Uygulamasi
             }
         }
 
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-            //validation
-            if (DateTime.Compare(dateTimePicker1.Value.Date, dateTimePicker2.Value.Date) > 0)
-            {
-                MessageBox.Show("Başlangıç tarihi son tarihten büyük olamaz.");
-                dateTimePicker1.Focus();
-                return;
-            }
-
-            DataTable dt = (DataTable)dataGridView1.DataSource;
-            DataView dv = new DataView();
-            dv = dt.DefaultView;
-            dv.RowFilter = "creationTime >= '" + dateTimePicker1.Value.Date + "' and  creationTime <= '" + dateTimePicker2.Value.Date + "'";
-        }
-
-        private void emanetleriAl()
-        {
-            DataTable table = new DataTable();
-            MySqlDataReader reader = new EmanetDAO().getReaderEmanet();
-            table.Load(reader);
-            dataGridView1.DataSource = table;
-        }
-
-        private void EmanetListesi_Load(object sender, EventArgs e) {
-            dataGridView1.Columns[9].HeaderText = "Emanet Teslim Durumu";
-        }
-        private void emanetGuncelle_Click(object sender, EventArgs e)
+        private void emanetGuncelle_Click_1(object sender, EventArgs e)
         {
             foreach (DataGridViewRow row in dataGridView1.Rows)
             {
@@ -100,9 +95,19 @@ namespace Universite_Arsiv_Uygulamasi
             }
         }
 
-        private void EmanetListesi_Load_1(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
+            if (DateTime.Compare(dateTimePicker1.Value.Date, dateTimePicker2.Value.Date) > 0)
+            {
+                MessageBox.Show("Başlangıç tarihi son tarihten büyük olamaz.");
+                dateTimePicker1.Focus();
+                return;
+            }
 
+            DataTable dt = (DataTable)dataGridView1.DataSource;
+            DataView dv = new DataView();
+            dv = dt.DefaultView;
+            dv.RowFilter = "eCreationTime >= '" + dateTimePicker1.Value.Date + "' and  eCreationTime <= '" + dateTimePicker2.Value.Date + "'";
         }
     }
 }

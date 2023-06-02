@@ -47,55 +47,51 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(304, 28);
+            this.label1.Location = new System.Drawing.Point(347, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 21);
+            this.label1.Size = new System.Drawing.Size(123, 28);
             this.label1.TabIndex = 0;
             this.label1.Text = "Evrak Kaydı";
             // 
             // evrakTuru
             // 
             this.evrakTuru.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.evrakTuru.Location = new System.Drawing.Point(238, 76);
-            this.evrakTuru.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.evrakTuru.Location = new System.Drawing.Point(272, 101);
             this.evrakTuru.Name = "evrakTuru";
-            this.evrakTuru.Size = new System.Drawing.Size(219, 23);
+            this.evrakTuru.Size = new System.Drawing.Size(250, 27);
             this.evrakTuru.TabIndex = 2;
             // 
             // evrakTanim
             // 
             this.evrakTanim.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.evrakTanim.Location = new System.Drawing.Point(238, 174);
-            this.evrakTanim.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.evrakTanim.Location = new System.Drawing.Point(272, 232);
             this.evrakTanim.Name = "evrakTanim";
-            this.evrakTanim.Size = new System.Drawing.Size(219, 23);
+            this.evrakTanim.Size = new System.Drawing.Size(250, 27);
             this.evrakTanim.TabIndex = 3;
             // 
             // depoIdText
             // 
             this.depoIdText.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.depoIdText.Location = new System.Drawing.Point(238, 219);
-            this.depoIdText.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.depoIdText.Location = new System.Drawing.Point(272, 292);
             this.depoIdText.Name = "depoIdText";
-            this.depoIdText.Size = new System.Drawing.Size(219, 23);
+            this.depoIdText.Size = new System.Drawing.Size(250, 27);
             this.depoIdText.TabIndex = 4;
             // 
             // tarihBilgiEK
             // 
             this.tarihBilgiEK.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tarihBilgiEK.Location = new System.Drawing.Point(238, 126);
-            this.tarihBilgiEK.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tarihBilgiEK.Location = new System.Drawing.Point(272, 168);
             this.tarihBilgiEK.Name = "tarihBilgiEK";
-            this.tarihBilgiEK.Size = new System.Drawing.Size(219, 23);
+            this.tarihBilgiEK.Size = new System.Drawing.Size(250, 27);
             this.tarihBilgiEK.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(163, 78);
+            this.label3.Location = new System.Drawing.Point(186, 104);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 15);
+            this.label3.Size = new System.Drawing.Size(80, 20);
             this.label3.TabIndex = 7;
             this.label3.Text = "Evrak Türü:";
             // 
@@ -103,9 +99,9 @@
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(157, 130);
+            this.label4.Location = new System.Drawing.Point(179, 173);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 15);
+            this.label4.Size = new System.Drawing.Size(87, 20);
             this.label4.TabIndex = 8;
             this.label4.Text = "Tarih Bilgisi:";
             // 
@@ -113,9 +109,9 @@
             // 
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(154, 177);
+            this.label5.Location = new System.Drawing.Point(176, 236);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 15);
+            this.label5.Size = new System.Drawing.Size(90, 20);
             this.label5.TabIndex = 9;
             this.label5.Text = "Evrak Tanım:";
             // 
@@ -123,9 +119,9 @@
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(111, 221);
+            this.label6.Location = new System.Drawing.Point(127, 295);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(108, 15);
+            this.label6.Size = new System.Drawing.Size(139, 20);
             this.label6.TabIndex = 10;
             this.label6.Text = "Depolama Alanı ID:";
             // 
@@ -133,38 +129,37 @@
             // 
             this.evrakKayitButon.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.evrakKayitButon.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.evrakKayitButon.Location = new System.Drawing.Point(258, 301);
-            this.evrakKayitButon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.evrakKayitButon.Location = new System.Drawing.Point(295, 401);
             this.evrakKayitButon.Name = "evrakKayitButon";
-            this.evrakKayitButon.Size = new System.Drawing.Size(182, 22);
+            this.evrakKayitButon.Size = new System.Drawing.Size(208, 29);
             this.evrakKayitButon.TabIndex = 14;
             this.evrakKayitButon.Text = "Kaydet";
             this.evrakKayitButon.UseVisualStyleBackColor = false;
+            this.evrakKayitButon.Click += new System.EventHandler(this.evrakKayitButon_Click);
             // 
             // arsivKonumText
             // 
             this.arsivKonumText.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.arsivKonumText.Location = new System.Drawing.Point(238, 259);
-            this.arsivKonumText.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.arsivKonumText.Location = new System.Drawing.Point(272, 345);
             this.arsivKonumText.Name = "arsivKonumText";
-            this.arsivKonumText.Size = new System.Drawing.Size(219, 23);
+            this.arsivKonumText.Size = new System.Drawing.Size(250, 27);
             this.arsivKonumText.TabIndex = 15;
             // 
             // label8
             // 
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(120, 264);
+            this.label8.Location = new System.Drawing.Point(137, 352);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(105, 15);
+            this.label8.Size = new System.Drawing.Size(129, 20);
             this.label8.TabIndex = 16;
             this.label8.Text = "Arşiv Raf Konumu:";
             // 
             // EvrakKayit
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(637, 388);
+            this.ClientSize = new System.Drawing.Size(728, 517);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.arsivKonumText);
             this.Controls.Add(this.evrakKayitButon);
@@ -177,7 +172,6 @@
             this.Controls.Add(this.evrakTanim);
             this.Controls.Add(this.evrakTuru);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "EvrakKayit";
             this.Text = "Evrak Kayıt";
             this.ResumeLayout(false);

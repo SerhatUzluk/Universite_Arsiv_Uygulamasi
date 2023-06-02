@@ -22,12 +22,7 @@ namespace Universite_Arsiv_Uygulamasi
             Icon = Icon.ExtractAssociatedIcon(System.Reflection.Assembly.GetExecutingAssembly().Location);
         }
 
-        private void kullaniciOlusturBtn_Click(object sender, EventArgs e)
-        {
-            KullaniciService kullaniciService = new KullaniciService();
-            kullaniciService.kullaniciOlustur(gUserName: kullaniciAdiTextBox.Text, gPassword: sifreTextBox.Text, gUserType: kullaniciTurTextBox.Text);
-
-        }
+       
 
         private void KullaniciOlustur_Load(object sender, EventArgs e)
         {
@@ -50,6 +45,14 @@ namespace Universite_Arsiv_Uygulamasi
         private void kullaniciOlusturText_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void kullaniciOlusturBtn_Click_2(object sender, EventArgs e)
+        {
+
+            KullaniciService kullaniciService = new KullaniciService();
+            (new KullaniciService()).kullaniciOlustur(kullaniciAdiTextBox.Text, sifreTextBox.Text, kullaniciTurTextBox.Text);
+            MessageBox.Show("Kullanıcı Oluşturuldu.");
         }
     }
 }
